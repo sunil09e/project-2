@@ -1,0 +1,10 @@
+terraform/
+.log
+*.log
+.git
+.gitignore
+.env
+*.env
+README.md
+Jenkinsfile
+kubernetes/

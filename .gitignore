@@ -1,0 +1,10 @@
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/.terraform.lock.hcl
+.env
+*.env
+.log
+*.log
+/logs
+
