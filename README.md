@@ -147,7 +147,7 @@ Used in pipeline securely
 Configured webhook in GitHub repo
 
 URL:
-http://<JENKINS-IP>:8080/github-webhook/
+http:// <JENKINS-IP> :8080/github-webhook/
 
 So whenever code is pushed → Jenkins triggers automatically
 
