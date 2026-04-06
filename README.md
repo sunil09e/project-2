@@ -120,6 +120,55 @@ http://EC2-PUBLIC-IP:8080
 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
+**Installed Required Plugins**
+
+We added plugins needed for DevOps pipeline:
+
+- Git plugin → to connect GitHub
+
+- Docker plugin → to build images
+
+- Pipeline plugin → to create CI/CD
+
+- Kubernetes plugin (optional)
+
+**Configured Credentials**
+
+Added credentials in Jenkins:
+
+GitHub credentials
+
+DockerHub username & password
+
+Used in pipeline securely
+
+**Connected GitHub (Webhook)**
+
+Configured webhook in GitHub repo
+
+URL:
+http://<JENKINS-IP>:8080/github-webhook/
+
+So whenever code is pushed → Jenkins triggers automatically
+
+**Created Pipeline Job**
+
+Created New Item → Pipeline
+
+Connected to GitHub repo
+
+Added pipeline script (Jenkinsfile)
+
+# Pipeline Stages (What Jenkins does)
+
+🔹 Stage 1: git clone <repo>
+
+🔹 Stage 2: Build Docker Image
+
+🔹 Stage 3: Push to DockerHub
+
+🔹 Stage 4: Deploy to Kubernetes
+
  **📂 Notes**
 
 - Jenkins runs on port 8080  
@@ -135,15 +184,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
      sudo cat /var/log/cloud-init-output.log
 
 
- **🔗 GitHub Webhook**
 
-http://(jenkins-url)/github-webhook/
-
-- Whenever code is pushed to GitHub, Jenkins automatically triggers the pipeline
-
-- No manual build is required
- 
-- This enables Continuous Integration (CI)
 
 
 
