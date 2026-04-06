@@ -217,6 +217,16 @@ kubectl get pods
 
 kubectl get svc
 
+**🔐 IAM Role Mapping in Kubernetes**
+
+- Added AWS IAM Role ARN to the aws-auth ConfigMap in the kube-system namespace
+
+- This mapping allows external entities (like Jenkins/EC2) to access the EKS cluster using kubectl
+
+- Assigned the role to system:masters group to provide admin-level access
+
+- Ensures secure authentication between AWS IAM and Kubernetes RBAC
+
 # 📊 Monitoring Commands (Prometheus + Grafana)
 
 **📌 Description**
