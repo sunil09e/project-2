@@ -41,13 +41,13 @@ Make sure you have:
 
 # ⚙️ Setup Instructions
 
-# 🐳 Docker Commands
-
 **Clone repository**
 
 git clone https://github.com/Vennilavanguvi/Trend.git
 
 cd Trend
+
+# 🐳 Docker Commands
 
 Create a Dockerfile in the project directory  
 
