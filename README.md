@@ -151,13 +151,53 @@ http://JENKINS-IP:8080/github-webhook/
 
 So whenever code is pushed → Jenkins triggers automatically
 
-**Created Pipeline Job**
+**Create a Pipeline Job**
 
-Created New Item → Pipeline
+Create New Item → Pipeline
 
-Connected to GitHub repo
+**🔧 General Configuration**
 
-Added pipeline script (Jenkinsfile)
+Enable GitHub Project
+
+Add repository URL:
+
+https://github.com/suni109e/project-2
+
+**🔔 Build Triggers**
+
+Enable: ✅ GitHub hook trigger for GITScm polling
+
+👉 This allows Jenkins to automatically trigger the pipeline whenever code is pushed to GitHub.
+
+**📂 Pipeline Configuration**
+
+**🔹 Definition**
+
+Select: Pipeline script from SCM
+
+This means:
+
+Jenkins will look for a file named Jenkinsfile in your repo
+
+If not present → pipeline will fail ❌
+
+**🔹 SCM Configuration**
+
+SCM: Git
+
+Repository URL:
+
+https://github.com/suni109e/project-2.git
+
+Credentials: Configured (GitHub access)
+
+**🔹 Branch Configuration**
+
+Branch Specifier:
+
+*/main
+
+👉 This ensures pipeline runs for the main branch
 
 # Pipeline Stages (What Jenkins does)
 
